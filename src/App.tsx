@@ -31,7 +31,60 @@ const MOCK_ORDERS: Order[] = [
     modeOfOrder: "Online",
     status: "In progress",
   },
-  // Add more mock orders as needed
+  {
+    date: "23-05-2025",
+    orderId: "V-545454",
+    dealership: "AK Motors",
+    customerName: "Aman upadhyay",
+    serviceType: "General Service",
+    modeOfOrder: "Offline",
+    status: "In progress",
+  },
+  {
+    date: "23-05-2025",
+    orderId: "V-545454",
+    dealership: "AK Motors",
+    customerName: "Aman upadhyay",
+    serviceType: "General Service",
+    modeOfOrder: "Offline",
+    status: "Completed",
+  },
+  {
+    date: "23-05-2025",
+    orderId: "V-545454",
+    dealership: "AK Motors",
+    customerName: "Aman upadhyay",
+    serviceType: "General Service",
+    modeOfOrder: "Offline",
+    status: "In progress",
+  },
+  {
+    date: "23-05-2025",
+    orderId: "V-545454",
+    dealership: "AK Motors",
+    customerName: "Aman upadhyay",
+    serviceType: "General Service",
+    modeOfOrder: "Offline",
+    status: "In progress",
+  },
+  {
+    date: "23-05-2025",
+    orderId: "V-545454",
+    dealership: "AK Motors",
+    customerName: "Aman upadhyay",
+    serviceType: "General Service",
+    modeOfOrder: "Online",
+    status: "In progress",
+  },
+  {
+    date: "23-05-2025",
+    orderId: "V-545454",
+    dealership: "AK Motors",
+    customerName: "Aman upadhyay",
+    serviceType: "General Service",
+    modeOfOrder: "Online",
+    status: "Completed",
+  },
 ];
 
 function App() {
@@ -75,11 +128,11 @@ function App() {
       <Sidebar />
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header />
-        <div className=" flex-1 px-6 py-4">
+        <div className=" flex-1 px-6 py-4 overflow-auto">
           <h2 className="font-medium text-2xl text-black -tracking-[1%]">
             All Order
           </h2>
-          <div className="h-full overflow-auto pt-6">
+          <div className="flex-1 pt-6">
             <div className="bg-white p-5 rounded-lg">
               <FilterBar
                 filters={filters}
